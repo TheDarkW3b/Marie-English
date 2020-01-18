@@ -1,6 +1,6 @@
 import threading
 from sqlalchemy import Column, String, UnicodeText
-from menhera.modules.sql import SESSION, BASE
+from tg_bot.modules.sql import SESSION, BASE
 
 class Locales(BASE):
     __tablename__ = "Locales"
