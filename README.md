@@ -29,7 +29,7 @@ Once you've setup your database and your configuration (see below) is complete, 
 Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
 This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6.
 
-### Configuration
+### Configuration xD
 
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
