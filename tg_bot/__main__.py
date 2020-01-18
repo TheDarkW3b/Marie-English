@@ -22,7 +22,7 @@ Hey {} ! My name is {} - I'm here to help you manage your groups!... Click /Help
 
 Made with love by [this guy](tg://user?id={}).
 
-My future updates will be put into This Group - @MafiaGrp
+My future updates will be put into This Group - @CuratorCrew
 
 I'm built in python3, using the python-telegram-bot library.
 
@@ -30,7 +30,7 @@ You can find the list of available commands with /help.🙂
 
 If you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
 
-[Click here to add me in your groups](https://t.me/perumafia_bot)
+
 
 """
 
@@ -143,7 +143,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("Already Up Dude😏")
+        update.effective_message.reply_text("Ya! I Am Working Fine🙂")
 
 
 # for test purposes
