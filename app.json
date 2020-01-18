@@ -1,6 +1,6 @@
 
 {
-  "name": "Marie-English",
+  "name": "Marie",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "manager",
     "3"
   ],
-  "repository": "https://github.com/TheDarkW3b/Marie-English/",
+  "repository": "https://github.com/TheDarkW3b/Marie-English",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
@@ -41,7 +41,7 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "835137609 686021814"
+      "value": "686021814 835137609"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
@@ -49,11 +49,11 @@
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "835137609 686021814"
+      "value": "686021814 835137609"
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
-      "value": "https://www.paypal.me/Your_id_here"
+      "value": "https://t.me/TheDarkW3b"
     },
     "PORT": {
       "description": "Port to use for your webhooks",
@@ -73,7 +73,8 @@
     },
     "BAN_STICKER": {
       "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
-      "value": "BQADAQADmAADcd9ZRUXMsCZy2tRKFgQ"
+      "value": "CAADBQADKwADttzjKMDa_NPYQVImFgQ"
+    }
   },
   "addons": [
     {
