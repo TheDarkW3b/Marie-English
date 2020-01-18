@@ -418,7 +418,7 @@ def fed_ban(bot: Bot, update: Update, args: List[str]):
         return
 
     if int(user_id) in SUDO_USERS:
-        message.reply_text(tld(chat.id, "I'm not fbanning the bot sudoers!"))
+        message.reply_text(tld(chat.id, "I'm not fbanning the bot sudoers!😴"))
         return
 
     if int(user_id) in WHITELIST_USERS:
