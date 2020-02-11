@@ -18,12 +18,16 @@ from tg_bot.__main__ import STATS, USER_INFO
 from tg_bot.modules.translations.strings import tld
 
 @run_async
-def proxy(bot: Bot, update: Update): 
-	proxy = requests.get('https://proxy11.com/api/proxy.json?key=OTA4.XkBkMw.kXAnDeXngEOrMlYcQ65ueOewBCY').json()[0]["preview"] 
-	final = "https://proxy11.com/{}".format(proxy) update.message.reply_text(tld(final)
+def proxy(bot: Bot, update: Update):
+	message = update.effective_message
+	proxy = requests.get('https://proxy11.com/api/proxy.json?key=OTA4.XkBkMw.kXAnDeXngEOrMlYcQ65ueOewBCY').json() 
+	reply_text = "https://proxy11.com/{}".format(proxy)
+	message.reply_text(reply_text)
+
 return ""	
 
 __help__ = """ - * Only For Sudos Now * - /proxy: Get Updated Proxy list"""
 
 __mod_name__ = "PROXY"
-	PROXY_HANDLER = CommandHandler("proxy", Proxy, filters=CustomFilters.sudo_filter)dispatcher.add_handler(PROXY_HANDLER)
+	PROXY_HANDLER = CommandHandler("proxy", Proxy, filters=CustomFilters.sudo_filter)
+	dispatcher.add_handler(PROXY_HANDLER)
