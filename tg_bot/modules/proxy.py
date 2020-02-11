@@ -29,5 +29,7 @@ return ""
 __help__ = """ - * Only For Sudos Now * - /proxy: Get Updated Proxy list"""
 
 __mod_name__ = "PROXY"
-	PROXY_HANDLER = CommandHandler("proxy", Proxy, filters=CustomFilters.sudo_filter)
-	dispatcher.add_handler(PROXY_HANDLER)
+
+PROXY_HANDLER = CommandHandler("proxy", proxy, pass_args=True, filters=CustomFilters.sudo_filter)
+
+dispatcher.add_handler(PROXY_HANDLER)
