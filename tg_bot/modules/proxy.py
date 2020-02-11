@@ -24,9 +24,8 @@ def proxy(bot: Bot, update: Update):
 	reply_text = "https://proxy11.com/{}".format(proxy)
 	message.reply_text(reply_text)
 
-return ""	
-
-__help__ = """ - * Only For Sudos Now * - /proxy: Get Updated Proxy list"""
+__help__ = """
+- * Only For Sudos Now * - /proxy: Get Updated Proxy list """
 
 __mod_name__ = "PROXY"
 
