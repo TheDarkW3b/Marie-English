@@ -63,7 +63,7 @@ def import_data(bot: Bot, update):
 @user_admin
 def export_data(bot: Bot, update: Update):
     msg = update.effective_message  # type: Optional[Message]
-    msg.reply_text("")
+    msg.reply_text("Successfully Exported :-)")
 
 
 __mod_name__ = "Backups"
